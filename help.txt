@@ -1,0 +1,6 @@
+//*This is tips file
+
+"CSS"; //use "" for css
+{JS} //use "" for javaScript
+
+//function starting with use are called hooks.Hooks are more restrictive than other functions.can only call hooks at the top of the component.If u need to use hook inside a loop use another component with hook
