@@ -1,18 +1,15 @@
 import "./App.css";
-
-import Profile from "./components/avatar/avatar";
-import MyButton from "./components/button";
-import BasicCard from "./components/card/card";
-import PersistentDrawerLeft from "./components/sidenav/sidenav";
-
+import SignIn from "./pages/landing_page/sign_in";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Side_Nav from "./components/side_nav/Side_nav";
 function App() {
   return (
-    <div>
-      <PersistentDrawerLeft />
-      <Profile />
-      <MyButton />
-      <BasicCard />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SignIn />} />
+        <Route path="/Home" element={<Side_Nav />} />
+      </Routes>
+    </Router>
   );
 }
 
